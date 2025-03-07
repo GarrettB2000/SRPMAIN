@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<!-- ### folder ### -->
+		<Item>
+			<modelName>W_PI_FN509MRDLE</modelName>
+			<txdName>W_PI_FN509MRDLE</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_PI_FN509MRDLE_Mag1</modelName>
+			<txdName>W_PI_FN509MRDLE_Mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AT_PI_MRD</modelName>
+			<txdName>W_AT_PI_MRD</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

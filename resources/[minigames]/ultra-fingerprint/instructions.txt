@@ -1,0 +1,29 @@
+Usage:
+
+	-- levels: Number of fingerprint hacking levels you want. Minimum is 1 and maximum is 4
+	-- time: Total time in seconds for hacking all levels. Minimum is 10 seconds and maximum is 300 seconds. Time needs to be in seconds only
+	-- reason: Reason for the outcome
+	-- outcome: Outcome is an integer can be following:
+	-- -1: Represents invalid parameters passed
+	-- 0: Represents hack failed
+	-- 1: Represents hack successful
+
+	-- Possible outcomes: 
+	-- Outcome 0: Reason: Player cancelled
+	-- Outcome 0: Reason: Time ran out
+	-- Outcome 1: Reason: Hack successful
+	-- Outcome -1: Reason: Invalid parameters passed
+	-- Outcome -1: Reason: Invalid levels passed
+	-- Outcome -1: Reason: Invalid time passed
+
+	TriggerEvent('ultra-fingerprint', levels, time, function(outcome, reason)
+		print(outcome, reason)
+	end)
+
+	Client command example: Put the following in a client script:
+
+		RegisterCommand('fpt', function(source)
+			TriggerEvent('ultra-fingerprint', 4, 300, function(outcome, reason)
+				print(outcome, reason)
+			end)
+		end)

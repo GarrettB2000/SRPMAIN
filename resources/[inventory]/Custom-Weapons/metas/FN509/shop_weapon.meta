@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WeaponShopItemArray>
+    <weaponShopItems>
+        <Item>
+			<lockHash>CU_WEP_FN509MRDLE</lockHash>
+			<nameHash>WEAPON_FN509MRDLE</nameHash>
+			<cost value ="5800"/>
+			<ammoCost value="800"/>
+			<textLabel>WT_FN509MRDLE</textLabel>
+			<weaponDesc>WTD_FN509MRDLE</weaponDesc>
+			<weaponTT>WTT_FN509MRDLE</weaponTT>
+			<weaponUppercase>WTU_FN509MRDLE</weaponUppercase>
+			<id value = "32"/>
+			<weaponComponents>
+				<Item>
+					<componentName>COMPONENT_AT_PI_SUPP_02</componentName>
+					<cost value = "15000"/>
+					<textLabel>WCT_SUPP</textLabel>
+					<componentDesc>WCD_PI_SUPP</componentDesc>
+				</Item>
+			</weaponComponents>
+		</Item>
+  </weaponShopItems>
+  <nameHash>NONE</nameHash>
+</WeaponShopItemArray>
