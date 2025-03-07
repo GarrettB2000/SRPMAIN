@@ -1,0 +1,849 @@
+/* Kaizen Default Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --ksHover: rgba(0, 194, 255, 0.6);
+    --ksSecondGr: rgba(0, 194, 255, 0.3);
+    --ksMainGr: rgba(0, 194, 255, 1.0);
+    --ksHoverGr: rgba(0, 194, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 0.833vw;
+}
+
+/* Kaizen Background Style */
+
+#ksRoot {
+    width: 100vw;
+    height: 100vh;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    display: none;
+}
+
+/* Kaizen Overlay Style */
+
+#ksOverlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(70deg, var(--ksHoverGr) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#ksLogo {
+    position: fixed;
+    width: 8.542vw;
+    height: 2.708vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.344vw;
+    background-image: url('../ks-files/ksLogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ksPauseM {
+    width: 74.479vw;
+    height: 41.146vw;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ksPmAbout {
+    position: absolute;
+    width: 18.229vw;
+    height: 14.583vw;
+    background: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+}
+
+#ksPmAbLine {
+    position: absolute;
+    width: 0.313vw;
+    height: 2.083vw;
+    background-color: var(--ksMainGr);
+    top: 1.302vw;
+    border-radius: 0vw 0.521vw 0.521vw 0vw;
+}
+
+#ksPmAbTitle {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 1.302vw;
+    left: 1.302vw;
+    color: white;
+    font-weight: 600;
+    font-size: 1.146vw;
+}
+
+#ksPmAbDesc {
+    position: absolute;
+    font-size: 0.729vw;
+    color: white;
+    width: 15.625vw;
+    height: fit-content;
+    top: 3.906vw;
+    left: 1.302vw;  
+}
+
+#ksPmPlayers {
+    position: absolute;
+    width: 53.646vw;
+    height: 4.167vw;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+    left: 20.833vw;
+}
+
+#ksPmNav {
+    position: absolute;
+    width: 18.229vw;
+    height: fit-content;
+    top: 17.188vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.042vw;
+}
+
+.ksPmNavCont {
+    position: relative;
+    width: 100%;
+    height: 5.208vw;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+    opacity: 0.9;
+}
+
+.ksPmNavCont:hover {
+    opacity: 1;
+}
+
+.ksPmNavLine {
+    position: absolute;
+    width: 0.313vw;
+    height: 2.604vw;
+    border-radius: 0vw 0.521vw 0.521vw 0vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ksPmNavIcon  {
+    position: absolute;
+    width: 2.083vw;
+    height: 2.083vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1.302vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ksPmNavTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 4.167vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ksPmNavTxt h1 {
+    font-size: 1.250vw;
+    color: white;
+}
+
+.ksPmNavTxt h2 {
+    font-size: 0.729vw;
+    font-weight: normal;
+    margin-top: -0.260vw;
+}
+
+#ksPmPlLine {
+    position: absolute;
+    width: 0.313vw;
+    height: 2.083vw;
+    background-color: var(--ksMainGr);
+    border-radius: 0vw 0.521vw 0.521vw 0vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#ksPmPlTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.042vw;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1.563vw;
+    font-weight: 400;
+    color: white;
+}
+
+.ksPmBlock {
+    position: absolute;
+    width: 32.500vw;
+    height: 7.813vw;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+    left: 20.833vw;
+}
+
+.ksPmLine {
+    position: absolute;
+    width: 0.313vw;
+    height: 2.083vw;
+    border-radius: 0vw 0.521vw 0.521vw 0vw;
+    top: 1.042vw;
+}
+
+.ksPmTitle {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 1.354vw;
+    font-weight: bold;
+    left: 1.302vw;
+    top: 0.781vw;
+}
+
+.ksPmDisc {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.677vw;
+    left: 1.302vw;
+    top: 2.500vw;
+}
+
+.ksPmBox {
+    position: absolute;
+    width: 6.250vw;
+    height: 2.604vw;
+    background: rgba(0, 0, 0, 0.2);
+    top: 5.208vw;
+    border-radius: 0.521vw 0.521vw 0vw 0vw;
+}
+
+.ksPmBoxTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.781vw;
+}
+
+.ksPmBoxTxt h1 {
+    font-size: 0.625vw;
+    font-weight: normal;
+}
+
+.ksPmBoxTxt h2 {
+    font-size: 0.729vw;
+    font-weight: bold;
+    color: white;
+    margin-top: -0.260vw;
+}
+
+.ksPmMiniBlock {
+    position: absolute;
+    width: 15.729vw;
+    height: 7.813vw;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+    left: 20.833vw;
+    top: 15.625vw;
+}
+
+.ksPmMLine {
+    position: absolute;
+    width: 2.604vw;
+    height: 0.313vw;
+    border-radius: 0vw 0vw 0.521vw 0.521vw;
+    left: 1.042vw;
+    opacity: 0.5;
+}
+
+.ksPmMTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0.781vw;
+    left: 1.302vw;
+}
+
+.ksPmMTxt h1 {
+    color: white;
+    font-size: 1.354vw;
+    font-weight: bold;
+}
+
+.ksPmMTxt h2 {
+    font-size: 0.677vw;
+    font-weight: normal;
+    margin-top: -0.417vw;
+}
+
+.ksCircleButton {
+    position: absolute;
+    width: 1.563vw;
+    height: 1.563vw;
+    border-radius: 100%;
+    opacity: 0.5;
+    left: 12.344vw;
+    top: 4.948vw;
+}
+
+.ksCircleButton:hover {
+    opacity: 1;
+}
+
+.ksCBarr {
+    width: 100%;
+    height: 100%;
+    background-image: url('../ks-files/ksArrows.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ksLinkBox {
+    position: absolute;
+    width: 18.854vw;
+    height: 10.417vw;
+    top: 6.771vw;
+    left: 55.990vw;
+}
+
+.ksLBline1 {
+    position: absolute;
+    width: 0.313vw;
+    height: 6.250vw;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.521vw 0vw 0vw 0.521vw;
+    opacity: 0.5;
+}
+
+.ksLBcont {
+    position: absolute;
+    width: 18.229vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+    left: 0.313vw;
+}
+
+.ksLBline2 {
+    position: absolute;
+    width: 0.313vw;
+    height: 6.250vw;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0vw 0.521vw 0.521vw 0vw;
+    opacity: 0.5;
+    left: 18.542vw;
+}
+
+.ksLBicon {
+    position: absolute;
+    width: 2.083vw;
+    height: 2.083vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.083vw;
+}
+
+.ksLBtext {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 0.729vw;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4.427vw;
+}
+
+.ksLBbtn {
+    position: absolute;
+    width: 7.813vw;
+    height: 2.083vw;
+    border-radius: 0.313vw;
+    background-color: var(--ksSecondGr);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 0.625vw;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6.250vw;
+}
+
+.ksLBbtn:hover {
+    background-color: var(--ksHover);
+}
+
+#ksCustomBox {
+    position: absolute;
+    width: 18.229vw;
+    height: 11.042vw;
+    top: 18.438vw;
+    left: 56.302vw;
+}
+
+#ksCuBLine1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7.292vw;
+    height: 0.313vw;
+    background-color: var(--ksMainGr);
+    opacity: 0.5;
+    border-radius: 0.521vw 0.521vw 0vw 0vw;
+}
+
+#ksCuBbox {
+    position: absolute;
+    width: 100%;
+    height: 10.417vw;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25vw); */
+    border-radius: 0.521vw;
+    top: 0.313vw;
+}
+
+#ksCuBLine2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7.292vw;
+    height: 0.313vw;
+    background-color: var(--ksMainGr);
+    opacity: 0.5;
+    border-radius: 0vw 0vw 0.521vw 0.521vw;
+    top: 10.729vw;
+}
+
+#ksCuBtitle {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.250vw;
+    font-weight: bold;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.823vw;
+    text-align: center;
+}
+
+#ksCuBdisc {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    font-size: 0.625vw;
+    font-weight: normal;
+    color: var(--ksMainGr);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3.646vw;
+    text-align: center;
+}
+
+#ksCuBbtn {
+    position: absolute;
+    width: 9.375vw;
+    height: 2.083vw;
+    border-radius: 0.313vw;
+    background-color: var(--ksSecondGr);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 0.625vw;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6.250vw;
+}
+
+#ksCuBbtn:hover {
+    background-color: var(--ksHover);
+}
+
+
+.ksBoldClr {
+    font-weight: bold;
+    color: var(--ksMainGr);
+}
+
+.ksTop1 {
+    top: 6.771vw;
+}
+.ksTop2 {
+    top: 24.479vw;
+}
+.ksTop3 {
+    top: 33.333vw;
+}
+.ksTop4 {
+    top: 30.729vw;
+}
+
+.ksLeft1 {
+    left: 2.188vw;
+}
+.ksLeft2 {
+    left: 9.479vw;
+}
+.ksLeft3 {
+    left: 16.771vw;
+    width: 4.167vw;
+}
+.ksLeft4 {
+    left: 21.979vw;
+    width: 8.333vw;
+}
+.ksLeft5 {
+    left: 37.604vw;
+}
+
+.ksLeft6 {
+    left: 1.094vw;
+}
+.ksLeft7 {
+    left: 8.385vw;
+}
+.ksLeft8 {
+    left: 37.604vw;
+}
+
+@media (min-width: 3840px) and (min-height: 1200px) {
+    #ksLogo {
+        width: 265px;
+        height: 84px;
+        top: 60px;
+    }
+    
+    #ksPauseM {
+        width: 1430px;
+        height: 790px;
+    }
+    
+    #ksPmAbout {
+        width: 350px;
+        height: 280px;
+    }
+    
+    #ksPmAbLine {
+        width: 6px;
+        height: 40px;
+        top: 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    #ksPmAbTitle {
+        top: 25px;
+        left: 25px;
+        font-size: 22px;
+    }
+    
+    #ksPmAbDesc {
+        font-size: 14px;
+        width: 300px;
+        top: 75px;
+        left: 25px;  
+    }
+    
+    #ksPmPlayers {
+        width: 1030px;
+        height: 80px;
+        border-radius: 10px;
+        left: 400px;
+    }
+    
+    #ksPmNav {
+        width: 350px;
+        top: 330px;
+        gap: 20px;
+    }
+    
+    .ksPmNavCont {
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+    }
+    
+    .ksPmNavLine {
+        width: 6px;
+        height: 50px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    .ksPmNavIcon  {
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+    }
+    
+    .ksPmNavTxt {
+        margin-left: 80px;
+    }
+    
+    .ksPmNavTxt h1 {
+        font-size: 24px;
+    }
+    
+    .ksPmNavTxt h2 {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    
+    #ksPmPlLine {
+        position: absolute;
+        width: 6px;
+        height: 40px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    #ksPmPlTxt {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    
+    .ksPmBlock {
+        width: 624px;
+        height: 150px;
+        border-radius: 10px;
+        left: 400px;
+        top: 100px;
+    }
+    
+    .ksPmLine {
+        width: 6px;
+        height: 40px;
+        border-radius: 0px 10px 10px 0px;
+        top: 20px;
+    }
+    
+    .ksPmTitle {
+        font-size: 26px;
+        left: 25px;
+        top: 15px;
+    }
+    
+    .ksPmDisc {
+        font-size: 13px;
+        left: 25px;
+        top: 48px;
+    }
+    
+    .ksPmBox {
+        width: 120px;
+        height: 50px;
+        top: 100px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .ksPmBoxTxt {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+    
+    .ksPmBoxTxt h1 {
+        font-size: 12px;
+    }
+    
+    .ksPmBoxTxt h2 {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    
+    .ksPmMiniBlock {
+        width: 302px;
+        height: 150px;
+        border-radius: 10px;
+        left: 400px;
+        top: 300px;
+    }
+    
+    .ksPmMLine {
+        width: 50px;
+        height: 6px;
+        border-radius: 0px 0px 10px 10px;
+        left: 20px;
+        opacity: 0.5;
+    }
+    
+    .ksPmMTxt {
+        top: 15px;
+        left: 25px;
+    }
+    
+    .ksPmMTxt h1 {
+        font-size: 26px;
+    }
+    
+    .ksPmMTxt h2 {
+        font-size: 13px;
+        margin-top: -8px;
+    }
+    
+    .ksCircleButton {
+        width: 30px;
+        height: 30px;
+        left: 237px;
+        top: 95px;
+    }
+    
+    .ksLinkBox {
+        width: 362px;
+        height: 200px;
+        top: 130px;
+        left: 1075px;
+    }
+    
+    .ksLBline1 {
+        width: 6px;
+        height: 120px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .ksLBcont {
+        width: 350px;
+        border-radius: 10px;
+        left: 6px;
+    }
+    
+    .ksLBline2 {
+        width: 6px;
+        height: 120px;   
+        transform: translateY(-50%);
+        border-radius: 0px 10px 10px 0px;
+        left: 356px;
+    }
+    
+    .ksLBicon {
+        width: 40px;
+        height: 40px;
+        top: 40px;
+    }
+    
+    .ksLBtext {
+        font-size: 14px;
+        top: 85px;
+    }
+    
+    .ksLBbtn {
+        position: absolute;
+        width: 150px;
+        height: 40px;
+        border-radius: 6px;
+        font-size: 12px;
+        top: 120px;
+    }
+    
+    #ksCustomBox {
+        width: 350px;
+        height: 212px;
+        top: 354px;
+        left: 1081px;
+    }
+    
+    #ksCuBLine1 {
+        width: 140px;
+        height: 6px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    #ksCuBbox {
+        height: 200px;
+        border-radius: 10px;
+        top: 6px;
+    }
+    
+    #ksCuBLine2 {
+        width: 140px;
+        height: 6px;
+        border-radius: 0px 0px 10px 10px;
+        top: 206px;
+    }
+    
+    #ksCuBtitle {
+        font-size: 24px;
+        top: 35px;
+    }
+    
+    #ksCuBdisc {
+        font-size: 12px;
+        top: 70px;
+    }
+    
+    #ksCuBbtn {
+        width: 180px;
+        height: 40px;
+        border-radius: 6px;
+        font-size: 12px;
+        top: 120px;
+    }
+
+    .ksTop1 {
+        top: 130px;
+    }  
+    .ksTop2 {
+        top: 470px;
+    }
+    .ksTop3 {
+        top: 640px;
+    }
+    .ksTop4 {
+        top: 590px;
+    }
+
+    .ksLeft1 {
+        left: 42px;
+    }
+    .ksLeft2 {
+        left: 182px;
+    }
+    .ksLeft3 {
+        left: 322px;
+        width: 80px;
+    }
+    .ksLeft4 {
+        left: 422px;
+        width: 160px;
+    }
+    .ksLeft5 {
+        left: 722px;
+    }
+    .ksLeft6 {
+        left: 21px;
+    }
+    .ksLeft7 {
+        left: 161px;
+    }
+    .ksLeft8 {
+        left: 722px;
+    }
+}

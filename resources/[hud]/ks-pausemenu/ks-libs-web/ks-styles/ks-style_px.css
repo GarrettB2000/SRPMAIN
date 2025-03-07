@@ -1,0 +1,496 @@
+/* Kaizen Default Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --ksHover: rgba(0, 194, 255, 0.6);
+    --ksSecondGr: rgba(0, 194, 255, 0.3);
+    --ksMainGr: rgba(0, 194, 255, 1.0);
+    --ksHoverGr: rgba(0, 194, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+/* Kaizen Background Style */
+
+#ksRoot {
+    width: 100vw;
+    height: 100vh;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    display: none;
+}
+
+/* Kaizen Overlay Style */
+
+#ksOverlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(70deg, var(--ksHoverGr) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#ksLogo {
+    position: fixed;
+    width: 164px;
+    height: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45px;
+    background-image: url('../ks-files/ksLogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ksPauseM {
+    width: 1430px;
+    height: 790px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ksPmAbout {
+    position: absolute;
+    width: 350px;
+    height: 280px;
+    background: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+}
+
+#ksPmAbLine {
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    background-color: var(--ksMainGr);
+    top: 25px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#ksPmAbTitle {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 25px;
+    left: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#ksPmAbDesc {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    width: 300px;
+    height: fit-content;
+    top: 75px;
+    left: 25px;  
+}
+
+#ksPmPlayers {
+    position: absolute;
+    width: 1030px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+    left: 400px;
+}
+
+#ksPmNav {
+    position: absolute;
+    width: 350px;
+    height: fit-content;
+    top: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ksPmNavCont {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.ksPmNavCont:hover {
+    opacity: 1;
+}
+
+.ksPmNavLine {
+    position: absolute;
+    width: 6px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ksPmNavIcon  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ksPmNavTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ksPmNavTxt h1 {
+    font-size: 24px;
+    color: white;
+}
+
+.ksPmNavTxt h2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -5px;
+}
+
+#ksPmPlLine {
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    background-color: var(--ksMainGr);
+    border-radius: 0px 10px 10px 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#ksPmPlTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.ksPmBlock {
+    position: absolute;
+    width: 624px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+    left: 400px;
+}
+
+.ksPmLine {
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    top: 20px;
+}
+
+.ksPmTitle {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    left: 25px;
+    top: 15px;
+}
+
+.ksPmDisc {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 13px;
+    left: 25px;
+    top: 48px;
+}
+
+.ksPmBox {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    top: 100px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ksPmBoxTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.ksPmBoxTxt h1 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ksPmBoxTxt h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-top: -5px;
+}
+
+.ksPmMiniBlock {
+    position: absolute;
+    width: 302px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+    left: 400px;
+    top: 300px;
+}
+
+.ksPmMLine {
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    border-radius: 0px 0px 10px 10px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+.ksPmMTxt {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 15px;
+    left: 25px;
+}
+
+.ksPmMTxt h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.ksPmMTxt h2 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: -8px;
+}
+
+.ksCircleButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    opacity: 0.5;
+    left: 237px;
+    top: 95px;
+}
+
+.ksCircleButton:hover {
+    opacity: 1;
+}
+
+.ksCBarr {
+    width: 100%;
+    height: 100%;
+    background-image: url('../ks-files/ksArrows.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ksLinkBox {
+    position: absolute;
+    width: 362px;
+    height: 200px;
+    top: 130px;
+    left: 1075px;
+}
+
+.ksLBline1 {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px 0px 0px 10px;
+    opacity: 0.5;
+}
+
+.ksLBcont {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+    left: 6px;
+}
+
+.ksLBline2 {
+    position: absolute;
+    width: 6px;
+    height: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0.5;
+    left: 356px;
+}
+
+.ksLBicon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+}
+
+.ksLBtext {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 85px;
+}
+
+.ksLBbtn {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: var(--ksSecondGr);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+}
+
+.ksLBbtn:hover {
+    background-color: var(--ksHover);
+}
+
+#ksCustomBox {
+    position: absolute;
+    width: 350px;
+    height: 212px;
+    top: 354px;
+    left: 1081px;
+}
+
+#ksCuBLine1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 6px;
+    background-color: var(--ksMainGr);
+    opacity: 0.5;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ksCuBbox {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+    top: 6px;
+}
+
+#ksCuBLine2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 6px;
+    background-color: var(--ksMainGr);
+    opacity: 0.5;
+    border-radius: 0px 0px 10px 10px;
+    top: 206px;
+}
+
+#ksCuBtitle {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+    text-align: center;
+}
+
+#ksCuBdisc {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--ksMainGr);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    text-align: center;
+}
+
+#ksCuBbtn {
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: var(--ksSecondGr);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+}
+
+#ksCuBbtn:hover {
+    background-color: var(--ksHover);
+}
+
+
+.ksBoldClr {
+    font-weight: bold;
+    color: var(--ksMainGr);
+}

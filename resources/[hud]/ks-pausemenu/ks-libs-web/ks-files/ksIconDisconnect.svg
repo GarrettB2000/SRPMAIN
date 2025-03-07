@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_13" data-name="Group 13" transform="translate(-8961 -7574)">
+    <rect id="Rectangle_51" data-name="Rectangle 51" width="40" height="40" transform="translate(8961 7574)" fill="none"/>
+    <g id="ksIconDisconnect" transform="translate(8962.818 7574)">
+      <path id="Path_32" data-name="Path 32" d="M20,19.2a3.886,3.886,0,0,0,3.917-3.854V3.854a3.917,3.917,0,0,0-7.834,0V15.346A3.886,3.886,0,0,0,20,19.2Z" transform="translate(-1.818)" fill="#cc2c2d"/>
+      <path id="Path_33" data-name="Path 33" d="M24.667,5.939V12.3a11.817,11.817,0,0,1,5.8,10.09,12.112,12.112,0,0,1-12.286,11.9A12.113,12.113,0,0,1,5.9,22.389,11.816,11.816,0,0,1,11.7,12.3V5.939A17.666,17.666,0,0,0,0,22.389C0,32.1,8.156,40,18.182,40s18.181-7.9,18.181-17.611A17.668,17.668,0,0,0,24.667,5.939Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

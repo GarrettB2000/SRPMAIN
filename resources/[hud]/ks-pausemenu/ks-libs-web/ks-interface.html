@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ks-styles/ks-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>ks-pausemenu</title>
+</head>
+<body>
+    <div id="ksRoot">
+        <div id="ksOverlay">
+            <div id="ksLogo"></div>
+            <div id="ksPauseM">
+                <div id="ksPmAbout">
+                    <div id="ksPmAbLine"></div>
+                    <div id="ksPmAbTitle"></div>
+                    <div id="ksPmAbDesc"></div>
+                </div>
+
+                <div id="ksPmPlayers">
+                    <div id="ksPmPlLine"></div>
+                    <div id="ksPmPlTxt"></div>
+                </div>
+
+                <div id="ksPmNav">
+                    <div class="ksPmNavCont" id="ksCsettings">
+                        <div class="ksPmNavLine" style="background-color: var(--ksMainGr);"></div>
+                        <div class="ksPmNavIcon" style="background-image: url('./ks-files/ksIconSettings.svg');"></div>
+                        <div class="ksPmNavTxt">
+                            <h1 id="NavTitle_1"></h1>
+                            <h2 style="color: var(--ksMainGr);" id="NavDisc_1"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmNavCont" id="ksCmap">
+                        <div class="ksPmNavLine" style="background-color: #9EEB04;"></div>
+                        <div class="ksPmNavIcon" style="background-image: url('./ks-files/ksIconMaps.svg');"></div>
+                        <div class="ksPmNavTxt">
+                            <h1 id="NavTitle_2"></h1>
+                            <h2 style="color: #9EEB04;" id="NavDisc_2"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmNavCont" id="ksCresume">
+                        <div class="ksPmNavLine" style="background-color: #E98E04;"></div>
+                        <div class="ksPmNavIcon" style="background-image: url('./ks-files/ksIconResume.svg');"></div>
+                        <div class="ksPmNavTxt">
+                            <h1 id="NavTitle_3"></h1>
+                            <h2 style="color: #E98E04;" id="NavDisc_3"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmNavCont" id="ksCdisconnect">
+                        <div class="ksPmNavLine" style="background-color: #CC2C2D;"></div>
+                        <div class="ksPmNavIcon" style="background-image: url('./ks-files/ksIconDisconnect.svg');"></div>
+                        <div class="ksPmNavTxt">
+                            <h1 id="NavTitle_4"></h1>
+                            <h2 style="color: #CC2C2D;" id="NavDisc_4"></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ksPmBlock ksTop1">
+                    <div class="ksPmLine" style="background-color: #FF62D3;opacity: 0.5;"></div>
+                    <div class="ksPmTitle" id="ksEventTitle"></div>
+                    <div class="ksPmDisc" style="color: #FF62D3;" id="ksEventDisc"></div>
+                    <div class="ksPmBox ksLeft1">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: #FF62D3;" id="ksEventname"></h1>
+                            <h2 id="ksDEventname">-</h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft2">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: #FF62D3;" id="ksEventdate"></h1>
+                            <h2 id="ksDEventdate">-</h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft3">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: #FF62D3;" id="ksEventtime"></h1>
+                            <h2 id="ksDEventtime">-</h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft4">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: #FF62D3;" id="ksEventlocation"></h1>
+                            <h2 id="ksDEventlocation">-</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ksPmMiniBlock">
+                    <div class="ksPmMLine" style="background-color: var(--ksMainGr);"></div>
+                    <div class="ksPmMTxt">
+                        <h1 id="ksCareerTitle"></h1>
+                        <h2 style="color: var(--ksMainGr);" id="ksCareerDisc"></h2>
+                    </div>
+                    <div class="ksPmBox ksLeft6">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: var(--ksMainGr);" id="ksCareerJob"></h1>
+                            <h2 id="ksJob"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft7">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: var(--ksMainGr);" id="ksCareerGrade"></h1>
+                            <h2 id="ksGrade"></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ksPmMiniBlock ksLeft8">
+                    <div class="ksPmMLine" style="background-color: #00FFB2;"></div>
+                    <div class="ksPmMTxt">
+                        <h1 id="ksFinanceTitle"></h1>
+                        <h2 style="color: #00FFB2;" id="ksFinanceDisc"></h2>
+                    </div>
+                    <div class="ksPmBox ksLeft6">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: #00FFB2;" id="ksFinanceCash"></h1>
+                            <h2><span id="ksCash"></span> <span style="color: #00FFB2;">$</span></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft7">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: #00FFB2;" id="ksFinanceBank"></h1>
+                            <h2><span id="ksBank"></span><span style="color: #00FFB2;">$</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ksPmBlock ksTop2">
+                    <div class="ksPmLine" style="background-color: var(--ksMainGr);opacity: 0.5;"></div>
+                    <div class="ksPmTitle" id="ksCharInfoTitle"></div>
+                    <div class="ksPmDisc" style="color: var(--ksMainGr);" id="ksCharInfoDisc"></div>
+                    <div class="ksPmBox ksLeft1">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: var(--ksMainGr);" id="ksFirstname"></h1>
+                            <h2 id="ksDFirstName"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft2">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: var(--ksMainGr);" id="ksLastname"></h1>
+                            <h2 id="ksDLastName"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft3">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: var(--ksMainGr);" id="ksGender"></h1>
+                            <h2 id="ksDGender"></h2>
+                        </div>
+                    </div>
+                    <div class="ksPmBox ksLeft4">
+                        <div class="ksPmBoxTxt">
+                            <h1 style="color: var(--ksMainGr);" id="ksBirthdate"></h1>
+                            <h2 id="ksDBirthdate"></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ksPmMiniBlock ksTop3">
+                    <div class="ksPmMLine" style="background-color: #FFF500;"></div>
+                    <div class="ksPmMTxt">
+                        <h1 id="PhoneTitle"></h1>
+                        <h2 style="color: #FFF500;" id="PhoneDisc"></h2>
+                    </div>
+                    <div id='ksOpenPhone' class="ksCircleButton" style="background-color: #FFF500;">
+                        <div class="ksCBarr"></div>
+                    </div>
+                </div>
+
+                <div class="ksPmMiniBlock ksTop3 ksLeft5">
+                    <div class="ksPmMLine" style="background-color: var(--ksMainGr);"></div>
+                    <div class="ksPmMTxt">
+                        <h1 id="InventoryTitle"></h1>
+                        <h2 style="color: var(--ksMainGr);" id="InventoryDisc"></h2>
+                    </div>
+                    <div id='ksOpenInventory' class="ksCircleButton" style="background-color: var(--ksMainGr);">
+                        <div class="ksCBarr"></div>
+                    </div>
+                </div>
+
+                <div class="ksLinkBox">
+                    <div class="ksLBline1" style="background-color: var(--ksMainGr);"></div>
+                    <div class="ksLBcont">
+                        <div class="ksLBicon" style="background-image: url('./ks-files/ksLinkDiscord.svg');"></div>
+                        <div class="ksLBtext" id="DiscordText"></div>
+                        <button class="ksLBbtn" id="ksDiscord"></button>
+
+                    </div>
+                    <div class="ksLBline2" style="background-color: var(--ksMainGr);"></div>
+                </div>
+
+                <div id="ksCustomBox">
+                    <div id="ksCuBLine1"></div>
+                    <div id="ksCuBbox">
+                        <div id="ksCuBtitle"></div>
+                        <div id="ksCuBdisc"></div>
+                        <button id="ksCuBbtn"></button>
+                    </div>
+                    <div id="ksCuBLine2"></div>
+                </div>
+
+                <div class="ksLinkBox ksTop4">
+                    <div class="ksLBline1" style="background-color: var(--ksMainGr);"></div>
+                    <div class="ksLBcont">
+                        <div class="ksLBicon" style="background-image: url('./ks-files/ksLinkTebex.svg');"></div>
+                        <div class="ksLBtext" id="WebsiteText"></div>
+                        <button class="ksLBbtn" id='ksWebsite'></button>
+
+                    </div>
+                    <div class="ksLBline2" style="background-color: var(--ksMainGr);"></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="../ks-libs-configs/ks-config.js"></script>
+    <script src="./ks-scripts/ks-script.js"></script>
+</body>
+</html>
