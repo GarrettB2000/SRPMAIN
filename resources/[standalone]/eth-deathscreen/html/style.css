@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background: linear-gradient(179deg, rgba(0, 0, 0, 0.50) 38.54%, rgba(0, 0, 0, 1) 99.24%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+    border-radius: 1px;
+}
+
+.mainContainer {
+    width: 30%;
+    height: 33%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imageContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.mainTextContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 35px;
+    top: 55%;
+}
+
+.mainTextContainer h4 {
+    text-shadow: 0px 0px 20px #E0606E;
+    background: linear-gradient(90deg, #e0606fcb 25.87%, #E29EA6 56.93%, #e0606fa1 86.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        
+}
+
+.subTextContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #52575c;
+    font-size: 14px;
+    top: 72%
+}
+
+#timerContainer {
+    width: 50%;
+    height: 18%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timerDiv {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #262626 0%, #1D1D1D 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+    overflow: hidden;
+}
