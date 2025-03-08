@@ -4,7 +4,7 @@ Config = {
 	Guilds = {
 		["name"] = "Styles Roleplay", -- Replace this with a name, like "main"
 	},
-	Bot_Token = 'MTI2ODczNjIxNzI2OTQwNzc5NQ.GFQ7Yz.AcuBbzF_3msVbhJIuY-a87VV9kmoIX2UxQCdrw',
+	Bot_Token = 'MTI2ODczNjIxNzI2OTQwNzc5NQ.GjxVOf.WvUg8ewz0bMzBwFtEYTzsdycnnjw22xMn5vsC8',
 	RoleList = {
 		['VIP Clothing'] = 1169713109104066600,
 		['SRP | Civilian'] = 1169403486966907071,
